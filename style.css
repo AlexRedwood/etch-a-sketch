@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  }
+
+html{
+
+padding: 0;
+margin: 0; 
+}
+
+body {
+  background: #c1dacb;
+  height: 100%; 
+  padding: 0;
+  margin: 0; 
+}
+
+main {	
+height: 60%;
+/*border: 1px solid orange;*/
+
+}	
+header {
+  padding: 30px;
+  margin: 20px;
+  text-align: center;
+}
+
+#logo {
+  padding-top: 50px;
+  margin: 0px;
+  color: #555500;
+  text-align: center;
+  font-weight: 900;
+  font-size: 50px;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif ;
+
+}
+
+#buttonBar {
+  display:block;
+  top: 37px;
+  position: relative;
+}
+
+button {
+  background-color: #c1dacb; /* Green */
+  border: 1px solid #555500;
+  color: #555500;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.5s; /* Safari */
+  transition-duration:  0.5s;
+  cursor: pointer;
+  border-radius: 7px;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  /*font-weight: bold;*/
+  
+
+
+}
+  
+button:hover {
+  background-color: #1cbd5b; /* Green */
+  color: #555500;
+}
+  
+
+#outer {
+display:grid;
+grid-template-columns: 1fr 450px 1fr;
+align-items: center;
+justify-items: center;
+overflow: auto;
+height: 85%; 
+
+}
+
+#board {
+display:grid;
+text-align: center;
+border: 1px solid #555500;
+
+width: 400px;
+height: 400px;
+overflow: auto;
+grid-template-columns: repeat(16, minmax(1px, 1000px));
+grid-template-rows: repeat(16, minmax(1px, 1000px));
+
+}
+
+
